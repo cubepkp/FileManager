@@ -290,7 +290,7 @@ namespace FileManager
             response.Close();
         }
 
-        // metoda usuwająca plik lokalny
+        // metoda usuwająca plik na dysku lokalnym
         public void DeleteFileOnLocal(string FileName, string Path)
         {
             System.IO.FileInfo fi = new System.IO.FileInfo(Path+"\\"+FileName);
