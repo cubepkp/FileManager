@@ -208,7 +208,7 @@ namespace FileManager
         public void CopyBetweenServers()
         {
 
-            //connect to the destination server
+            //łaczenie sie z serwerem docelowym
             ServerProperties pasteServer = getServerByNumber(pasteDestination.NrOfServer);
             ServerProperties copyServer = getServerByNumber(copySource.NrOfServer);
             string fileName = copySource.FileDirectory;
@@ -224,7 +224,7 @@ namespace FileManager
 
             Stream streamDestination = requestDestination.GetRequestStream();
 
-            //connect to the source server
+            //laczenie sie z serwerem zrodlowm
 
             FtpWebRequest fileRequest = (FtpWebRequest)WebRequest.Create(new Uri("ftp://" + copySource.FileDirectory));
 
